@@ -75,7 +75,7 @@ Além da criação do arquivo, o script de coleta também envia o arquivo coleta
 
 O DataSet está separado em duas versões de dados além das variações dos dispositivos de coletas, sendo:
 * Data_DS1_(raspberry/Fabio_raspberry)
-* Data_DS2_(raspberry/asus/Fabio_asus/Fabio_raspberry)
+* Data_DS2_(raspberry/asus/Fabio_raspberry/Fabio_asus)
 
 Sendo assim, possuindo juntamente dados relativos a coletas dos voluntários, com os equipamentos de medição de acurácia de modelos utilizados nos experimentos e estudos da tecnologia.
 
@@ -90,7 +90,7 @@ Contém os seguintes dados:
 
 Contém os seguintes dados:
 * Arquivos pcap de 2000 pacotes.
-* Ordem das posições: 1, 3, 4, 6, 8, 10, 12, 14, 2, 5, 7, 9, 11, 13, 15, 16, 17
+* Ordem das posições: 1, 3, 4, 6, 8, 10, 12, 14, 2, 5, 7, 9, 11, 13, 15, 16, 17, 18
 * Arquivos do SmartWatch
 * Arquivos da PolarBand
 
