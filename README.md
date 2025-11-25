@@ -15,7 +15,6 @@ Below you will find information about the structure and the available data, and 
 # Collection of participant position data
 
 The positions of the volunteers are collected and stored using the following numerical codes:
-
 * 00 - Absence of a person
 * 01 - Sitting facing forward, breathing normally
 * 02 - Sitting facing forward, breathing intermittently
@@ -46,12 +45,12 @@ The corresponding terms for the positions:
 ## Raspberry and router asus data
 
 The files follow the naming pattern:
-pre_time_bw_80_ch_36.pcap
+pre_time_bw_80_ch_36.extension
 Where:
-
 * **pre** - prefix indicating the capture position  
 * **time** - timestamp marking the start of the capture  
 * **bw_80_ch_36** - network configuration used during the capture
+* **extension** - Type of extension in file **.pcap**.
 
 ### Example
 
@@ -64,6 +63,7 @@ Where:
 | `00`                    | Absence of a person                     	   |
 | `2023_11_08_-_17_26_26` | Capture start time                             |
 | `bw_80_ch_36`           | Network configuration (Wi-Fi bandwidth/channel)|
+| `.pcap`		  | File data in PCAP format		   	   |
 
 
 ## Smartwatch data
@@ -71,7 +71,6 @@ Where:
 The files follow the naming pattern:
 pre_time_HeartRateData.extension
 Where:
-
 * **pre** - Prefix indicating the capture position.
 * **time** - Timestamp marking the start of the capture.
 * **HeartRateData** - Type of vital sign data collected.
@@ -96,7 +95,6 @@ Where:
 The files follow the naming pattern:
 pre_time_HeartRateData.extension
 Where:
-
 * **pre** - Prefix indicating the capture position.
 * **time** - Timestamp marking the start of the capture.
 * **HeartRateData** - Type of vital sign data collected.
@@ -168,9 +166,8 @@ To verify the integrity of the data collection for each dataset, each one includ
 # Others files
 
 The following existing repositories:
-
-* Data_Polar - 
-* Data_Smartwatch - 
+* Data_Polar - Data collected from the participants using the Polar device, from the beginning of the data collection in the first position to the last, including heart rate, accelerometer, and heart rate variability data, among other metrics.
+* Data_Smartwatch - Data collected from the participants using the Smartwatch, from the beginning of the data collection in the first position to the last, including heart rate, distance traveled, among other metrics.
 
 They contain extra files resulting from data collections with the devices of all participants, which are not currently structured or explored. To obtain access or information about each extra raw data file, contact us using the email at the top of the page.
 
@@ -211,14 +208,14 @@ In addition to creating the file, the collection script also sends the collected
 # Used devices 
 
 The following devices were used for Wi-Fi data collection, data storage and processing, as well as vital-sign acquisition:
-* Router Asus RT AC86U - 
-* Router TP-Link AC1750 - 
-* Raspberry Pi 4 B- 
-* Notebook DELL Inspiron 15 i7-5500U - 
-* Notebook Dell Inspiron 15-7572 - 
-* Desktop Gigabyte i7 i7-4790 - 
-* Smartphone Samsung Galaxy A12
-* Smartwatch Samsung Galaxy Watch 4 - 
-* Fita Cardíaca Polar Band H10 - 
+* Router Asus RT AC86U - Router operating in monitor mode collecting PCAP packets.
+* Router TP-Link AC1750 - Router that communicates with the laptop, generating network traffic with sent/received packets.
+* Raspberry Pi 4 B- Microcomputer operating in monitor mode collecting PCAP packets.
+* Laptop DELL Inspiron 15 i7-5500U - Laptop that communicates with the TP-Link router, generating network traffic.
+* Laptop Dell Inspiron 15-7572 - Laptop that communicates via SSH with the Asus router to store files and send commands.
+* Desktop Gigabyte i7 i7-4790 - Desktop that communicates via SSH with the Raspberry Pi to store files and send commands.
+* Smartphone Samsung Galaxy A12 - Smartphone that communicates with the Polar H10 heart strap, storing the files and sending commands.
+* Smartwatch Samsung Galaxy Watch 4 - Smartwatch that collects heart rate data and distance traveled.
+* Chest strap Polar Band H10 - Heart strap that collects heart rate, accelerometer data, and heart rate variability.
 
 For more details, refer to **specs_devices.txt**.
