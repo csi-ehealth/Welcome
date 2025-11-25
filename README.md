@@ -89,7 +89,6 @@ Where:
 | `HeartRateData`         | Type of vital sign data collected		   |
 | `.json`		  | Vital sign data in JSON format		   |
 
-##
 <!--### Raw file-->
 
 Additionally, each participant contains the raw data from the collection in a single file, starting from the first position recording until the end. This file is later processed into separate files for each volunteer position, as described earlier. The file has the following format:
