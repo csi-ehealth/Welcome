@@ -89,6 +89,28 @@ Where:
 | `HeartRateData`         | Type of vital sign data collected		   |
 | `.json`		  | Vital sign data in JSON format		   |
 
+##
+<!--### Raw file-->
+
+Additionally, each participant contains the raw data from the collection in a single file, starting from the first position recording until the end. This file is later processed into separate files for each volunteer position, as described earlier. The file has the following format:
+time_prefix.extension
+Where:
+* **time** - timestamp marking the start of the capture  
+* **prefix** - The prefix can be **HR_collection_Seq** or **HeartRateData**
+* **extension** - Type of extension in processed collected file **.json**, or in graphic format **.png**.
+
+### Example
+
+2023_10_30_-_11_52_49_HR_collection_Seq.png
+
+### Breakdown
+
+| Component               | Meaning                                        |
+|-------------------------|------------------------------------------------|
+| `2023_10_30_-_11_52_49` | Capture start time                             |
+| `HR_collection_Seq`     | Type of vital sign data collected		   |
+| `.png`		  | Vital sign data in PNG format		   |
+
 
 ## Polar data
 
