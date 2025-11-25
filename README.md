@@ -1,13 +1,13 @@
 # Welcome
 
 Welcome. This CSI project is part of the Midiacom laboratory’s research group, which is located at Universidade Federal Fluminense (UFF), focused on digital health using WiFi data. We provide controlled access to the datasets, which can be requested by sending an email to one of the group members:
-- **Célio Albuquerque** - celio@midiacom.uff.br
-- **Débora Muchaluat-Saade** - debora@midiacom.uff.br
-- **Fábio Queirós** - fabiogabriel@midiacom.uff.br
-- **Iandra Galdino** - igar@midiacom.uff.br
-- **Julio Soto** - jsoto@midiacom.uff.br
-- **Raphael Guerra** - rguerra@midiacom.uff.br
-- **Taiane Ramos** - taiane@midiacom.uff.br
+* **Célio Albuquerque** - celio@midiacom.uff.br
+* **Débora Muchaluat-Saade** - debora@midiacom.uff.br
+* **Fábio Queirós** - fabiogabriel@midiacom.uff.br
+* **Iandra Galdino** - igar@midiacom.uff.br
+* **Julio Soto** - jsoto@midiacom.uff.br
+* **Raphael Guerra** - rguerra@midiacom.uff.br
+* **Taiane Ramos** - taiane@midiacom.uff.br
 
 Below you will find information about the structure and the available data, and for more details, please contact us by email.
 
@@ -49,9 +49,9 @@ The files follow the naming pattern:
 pre_time_bw_80_ch_36.pcap
 Where:
 
-- **pre** - prefix indicating the capture position  
-- **time** - timestamp marking the start of the capture  
-- **bw_80_ch_36** - network configuration used during the capture
+* **pre** - prefix indicating the capture position  
+* **time** - timestamp marking the start of the capture  
+* **bw_80_ch_36** - network configuration used during the capture
 
 ### Example
 
@@ -72,10 +72,10 @@ The files follow the naming pattern:
 pre_time_HeartRateData.extension
 Where:
 
-- **pre** - Prefix indicating the capture position.
-- **time** - Timestamp marking the start of the capture.
-- **HeartRateData** - Type of vital sign data collected.
-- **extension** - Type of extension in processed collected file (.json), or in graphic format (.png).
+* **pre** - Prefix indicating the capture position.
+* **time** - Timestamp marking the start of the capture.
+* **HeartRateData** - Type of vital sign data collected.
+* **extension** - Type of extension in processed collected file **.json**, or in graphic format **.png**.
 
 ### Example
 
@@ -97,10 +97,10 @@ The files follow the naming pattern:
 pre_time_HeartRateData.extension
 Where:
 
-- **pre** - Prefix indicating the capture position.
-- **time** - Timestamp marking the start of the capture.
-- **HeartRateData** - Type of vital sign data collected.
-- **extension** - Type of extension in processed collected file (.csv), or in graphic format (.png)
+* **pre** - Prefix indicating the capture position.
+* **time** - Timestamp marking the start of the capture.
+* **HeartRateData** - Type of vital sign data collected.
+* **extension** - Type of extension in processed collected file **.csv**, or in graphic format **.png**.
 
 ### Example
 
@@ -142,22 +142,22 @@ Contains the following data:
 The repositories with suffixes ending in: asus, raspberry, polar, and smartwatch are data collections from the same participants, at the same moment, using different devices. Each data repository follows its respective specification:
 
 ### asus
-Contains data collected by the Asus RT-AC86U device, in .pcap format, for the participants of dataset version 2.
+Contains data collected by the Asus RT-AC86U device, in **.pcap** format, for the participants of dataset version 2.
 
 ### raspberry
-Contains data collected by the Raspberry Pi 4 B device, in .pcap format, for the participants of dataset version 1 or 2.
+Contains data collected by the Raspberry Pi 4 B device, in **.pcap** format, for the participants of dataset version 1 or 2.
 
 ### polar
-Contains data collected by the Polar Band H10 device, in .csv and .png formats for the participants of dataset version 2.
+Contains data collected by the Polar Band H10 device, in **.csv** and **.png** formats for the participants of dataset version 2.
 
 ### smartwatch
-Contains data collected by the Samsung Galaxy Watch 4 device, in .json and .png format, for the participants of dataset version 1 or 2.
+Contains data collected by the Samsung Galaxy Watch 4 device, in **.json** and **.png** format, for the participants of dataset version 1 or 2.
 
 ### Fabio_asus
-Contains data collected by the RaspBerry Pi 4 B device, in .pcap format, for the proprietary dataset of member Fábio, following the modified protocol of dataset version 2.
+Contains data collected by the RaspBerry Pi 4 B device, in **.pcap** format, for the proprietary dataset of member Fábio, following the modified protocol of dataset version 2.
 
 ### Fabio_raspberry
-Contains data collected by the Asus RT-AC86U device, in .pcap format, for the proprietary dataset of member Fábio, following the modified protocol of dataset version 2.
+Contains data collected by the Asus RT-AC86U device, in **.pcap** format, for the proprietary dataset of member Fábio, following the modified protocol of dataset version 2.
 
 
 # Integrity
@@ -169,8 +169,8 @@ To verify the integrity of the data collection for each dataset, each one includ
 
 The following existing repositories:
 
-- Data_Polar - 
-- Data_Smartwatch - 
+* Data_Polar - 
+* Data_Smartwatch - 
 
 They contain extra files resulting from data collections with the devices of all participants, which are not currently structured or explored. To obtain access or information about each extra raw data file, contact us using the email at the top of the page.
 
@@ -201,7 +201,7 @@ For participant 000, in the activity sitting facing forward, breathing intermitt
 
 sudo bash collectCSIdata.sh 000 02 80 36 DC:53:60:11:66:92 500
 
-The result of this collection will be the creation of a directory with the participant code under the scans directory and a .pcap file whose name contains the activity code, the timestamp of the start of the collection, and the bandwidth and channel information used in the capture. In the case of the example above, if the capture was performed at 12:25:38 on 02/25/2022, the generated file would be:
+The result of this collection will be the creation of a directory with the participant code under the scans directory and a **.pcap** file whose name contains the activity code, the timestamp of the start of the collection, and the bandwidth and channel information used in the capture. In the case of the example above, if the capture was performed at 12:25:38 on 02/25/2022, the generated file would be:
 
 directory_path/scans/000/02_2022_02_25_-_12_25_38_bw_80_ch_36.pcap
 
