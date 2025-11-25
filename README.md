@@ -45,7 +45,7 @@ The corresponding terms for the positions:
 ## Raspberry <!--and router asus--> data
 
 The files follow the naming pattern:  
-pre_time_bw_80_ch_36.extension  
+**pre_time_bw_80_ch_36.extension**  
 Where:
 * **pre** - prefix indicating the capture position  
 * **time** - timestamp marking the start of the capture  
@@ -69,7 +69,7 @@ Where:
 ## Smartwatch data
 
 The files follow the naming pattern:  
-pre_time_HeartRateData.extension  
+**pre_time_HeartRateData.extension**  
 Where:
 * **pre** - Prefix indicating the capture position.
 * **time** - Timestamp marking the start of the capture.
@@ -92,7 +92,7 @@ Where:
 ### Raw file
 
 Additionally, each participant contains the raw data from the collection in a single file, starting from the first position recording until the end. This file is later processed into separate files for each volunteer position, as described earlier. The file has the following format:  
-time_prefix.extension  
+**time_prefix.extension**  
 Where:
 * **time** - Timestamp marking the start of the capture.
 * **prefix** - The prefix can be **HR_collection_Seq** or **HeartRateData**, both vital sign.
@@ -114,7 +114,7 @@ Where:
 ## Polar data
 
 The files follow the naming pattern:  
-pre_time_HeartRateData.extension  
+**pre_time_HeartRateData.extension**  
 Where:
 * **pre** - Prefix indicating the capture position.
 * **time** - Timestamp marking the start of the capture.
@@ -137,7 +137,7 @@ Where:
 ### Raw file
 
 Additionally, each participant contains the raw data from the collection in a single file, starting from the first position recording until the end. This file is later processed into separate files for each volunteer position, as described earlier. The file has the following format:  
-ident_time_prefix.extension  
+**ident_time_prefix.extension**  
 Where:
 * **ident** - Model and identifier of the Polar H10.
 * **time** - timestamp marking the start of the capture  
