@@ -42,7 +42,7 @@ The corresponding terms for the positions:
 
 # File name structure
 
-## Raspberry and router asus data
+## Raspberry <!--and router asus--> data
 
 The files follow the naming pattern:
 pre_time_bw_80_ch_36.extension
@@ -117,8 +117,8 @@ Where:
 # DataSet Version
 
 The dataset is divided into two different data collection protocols, containing variations of the devices used in each repository, as follows:
-* Data_DS1_(raspberry/smartwatch/Fabio_raspberry)
-* Data_DS2_(raspberry/asus/smartwatch/polar/Fabio_raspberry/Fabio_asus)
+* Data_DS1_(raspberry/smartwatch<!--/Fabio_raspberry-->)
+* Data_DS2_(raspberry/<!--asus/-->smartwatch/polar<!--/Fabio_raspberry/Fabio_asus-->)
 
 ## Data_DS1
 
@@ -137,11 +137,11 @@ Contains the following data:
 
 ## Types of repositories
 
-The repositories with suffixes ending in: asus, raspberry, polar, and smartwatch are data collections from the same participants, at the same moment, using different devices. Each data repository follows its respective specification:
+The repositories with suffixes ending in: <!--asus, -->raspberry, polar, and smartwatch are data collections from the same participants, at the same moment, using different devices. Each data repository follows its respective specification:
 
-### asus
+<!--### asus
 Contains data collected by the Asus RT-AC86U device, in **.pcap** format, for the participants of dataset version 2.
-
+-->
 ### raspberry
 Contains data collected by the Raspberry Pi 4 B device, in **.pcap** format, for the participants of dataset version 1 or 2.
 
@@ -150,13 +150,13 @@ Contains data collected by the Polar Band H10 device, in **.csv** and **.png** f
 
 ### smartwatch
 Contains data collected by the Samsung Galaxy Watch 4 device, in **.json** and **.png** format, for the participants of dataset version 1 or 2.
-
+<!--
 ### Fabio_asus
 Contains data collected by the RaspBerry Pi 4 B device, in **.pcap** format, for the proprietary dataset of member Fábio, following the modified protocol of dataset version 2.
 
 ### Fabio_raspberry
 Contains data collected by the Asus RT-AC86U device, in **.pcap** format, for the proprietary dataset of member Fábio, following the modified protocol of dataset version 2.
-
+-->
 
 # Integrity
 
@@ -179,7 +179,7 @@ The codes of the members and each branch of the research on CSI technology (pers
 
 # Command line for CSI data collection
 
-The execution of the collection script (collectCSIdata.sh) must be performed on the Raspberry Pi and/or router Asus.
+The execution of the collection script (collectCSIdata.sh) must be performed on the Raspberry Pi<!-- and/or router Asus-->.
 The parameters of collectCSIdata.sh are:
 
 1. Anonymized participant code: Numeric three-digit code assigned at the time of completing the form.
