@@ -89,14 +89,14 @@ Where:
 | `HeartRateData`         | Type of vital sign data collected		   |
 | `.json`		  | Vital sign data in JSON format		   |
 
-<!--### Raw file-->
+### Raw file
 
 Additionally, each participant contains the raw data from the collection in a single file, starting from the first position recording until the end. This file is later processed into separate files for each volunteer position, as described earlier. The file has the following format:
 time_prefix.extension
 Where:
-* **time** - timestamp marking the start of the capture  
-* **prefix** - The prefix can be **HR_collection_Seq** or **HeartRateData**
-* **extension** - Type of extension in processed collected file **.json**, or in graphic format **.png**.
+* **time** - Timestamp marking the start of the capture.
+* **prefix** - The prefix can be **HR_collection_Seq** or **HeartRateData**, both vital sign.
+* **extension** - Type of extension in collected file **.json**, or in graphic format **.png**.
 
 ### Example
 
@@ -133,6 +133,29 @@ Where:
 | `2023_10_30_-_12_20_05` | Capture start time                             |
 | `HeartRateData`         | Type of vital sign data collected		   |
 | `.csv`		  | Vital sign data in CSV format		   |
+
+### Raw file
+
+Additionally, each participant contains the raw data from the collection in a single file, starting from the first position recording until the end. This file is later processed into separate files for each volunteer position, as described earlier. The file has the following format:
+ident_time_prefix.extension
+Where:
+* **ident** - Model and identifier of the Polar H10.
+* **time** - timestamp marking the start of the capture  
+* **prefix** - Type of vital sign data collected.
+* **extension** - Type of extension in collected file **.txt**.
+
+### Example
+
+Polar_H10_C3316D26_20231030_111917_HR.txt
+
+### Breakdown
+
+| Component               | Meaning                                        |
+|-------------------------|------------------------------------------------|
+| `Polar_H10_C3316D26` 	  | Model and identifier of Polar                  |
+| `20231030_111917` 	  | Capture start time                             |
+| `HR`     		  | Type of vital sign data collected (Hearte Rate)|
+| `.txt`		  | Vital sign data in TXT format		   |
 
 
 # DataSet Version
